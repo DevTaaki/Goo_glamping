@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 
     <title>구글램핑</title>
-
+    <link rel="shortcut icon" type="image/x-icon" href="/static/icon3.png">
     <style>
         body{
             margin: 0;
@@ -82,7 +82,7 @@
                         if (response['result'] == 'success') {
                             $.cookie('mytoken', response['token'], {path: '/'});
                             alert('로그인 완료!')
-                            window.location.href = '/main'
+                            window.location.href ='/main'
                         } else {
                             alert(response['msg'])
                         }

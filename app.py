@@ -17,6 +17,10 @@ db = client.dbsparta
 def home():
     return render_template('home.html')
 
+@app.route('/main')
+def main():
+    return render_template('review-list.html')
+
 @app.route('/sign_up')
 def sign_up():
     return render_template('sign_up.html')
