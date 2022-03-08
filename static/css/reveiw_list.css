@@ -1,0 +1,82 @@
+<style>
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            width: 100%;
+            height: 230px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://search.pstatic.net/common/?autoRotate=true&amp;quality=95&amp;type=w750&amp;src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20211125_181%2F1637806739989JTe1a_JPEG%2Fimage.jpg');
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .logout_btn {
+            width: 130px;
+            height: 40px;
+
+            background-color: transparent;
+            color: white;
+
+            position: absolute;
+            right: 2%;
+            top: 1%;
+
+            border-radius: 10px;
+            border: 1px solid white;
+
+            margin-top: 10px;
+        }
+
+        .mytitle > button:hover {
+            border: 2px solid white;
+        }
+
+        .carousel-box {
+            width: 95%;
+            margin: 50px auto 30px auto;
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .mycards {
+            margin: 20px auto 30px auto;
+            width: 95%;
+            max-width: 1200px;
+        }
+
+        .review-post {
+            width: 95%;
+            max-width: 500px;
+            margin: auto auto 50px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px gray;
+
+            display: none;
+        }
+
+        .mybtns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
+
+        .mybtns > button {
+            margin-right: 10px;
+        }
+    </style>
