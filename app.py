@@ -7,10 +7,20 @@ from pymongo import MongoClient
 client = MongoClient('mongodb+srv://test:sparta@cluster0.xsuuq.mongodb.net/Cluster0?retryWrites=true&w=majority')
 db = client.dbsparta
 
-@app.route('/')
-def home():
+@app.route('/review_list', method=["POST"])
+def review_post():
+    title_receive = request.form['title_give']
+    address_receive = request.form['address_give']
+    star_receive = request.form['star_receive']
+    review_receive = request.form['review_give']
 
-    return render_template('index.html')
+    doc = {
+        'title': title_receive,
+        'star': star_receive,
+        
+    }
+
+    return jsonify({'msg':'POST 연결 완료!'})
 
 
 
